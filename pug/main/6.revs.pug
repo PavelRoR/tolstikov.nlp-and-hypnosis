@@ -1,0 +1,41 @@
+section#revs
+	+gt2('','Отзывы участников')
+	.container
+		#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
+			.carousel-inner(role="listbox")
+				.item.text-rev-item.active
+					a( href="img/revs/text-1.png" data-fancybox="text")
+						img.revs-img( src="img/revs/text-1.png" alt="Отзыв 1")
+				each n in [2,3,4,5,6]
+					.item.text-rev-item
+						a( href="img/revs/text-"+n+".png" data-fancybox="text")
+							img.revs-img( src="img/revs/text-"+n+".png" alt="Отзыв "+n)
+			ol.carousel-indicators.revs_indicators
+				li.active( data-target="#text-revs" data-slide-to="0")
+				li( data-target="#text-revs" data-slide-to="1")
+				li( data-target="#text-revs" data-slide-to="2")
+				li( data-target="#text-revs" data-slide-to="3")
+				li( data-target="#text-revs" data-slide-to="4")
+				li( data-target="#text-revs" data-slide-to="5")
+			.controls.text-controls
+				a( class="left carousel-control" href="#text-revs" role="button" data-slide="prev") <
+				a( class="right carousel-control" href="#text-revs" role="button" data-slide="next") >
+		#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
+			.carousel-inner(role="listbox")
+				.item.video-rev-item.active
+					.video-wrapper.video-wrapper-revs(data-youtube="WIQP7_xxVW0" data-img="img/revs/video-1.png")
+						img.revs-img( src="img/revs/video-1.png" alt="Отзыв 1")
+				each n,index in {2:'Gqfg63CiVvs',3:'HbNXQ32DUrk ',4:'c2K-00Q_8P0',5:'3rDWv8c7Ulg ',6:'LFXeJG-Dkp8'}
+					.item.video-rev-item
+						.video-wrapper.video-wrapper-revs(data-youtube=n data-img="img/revs/video-"+index+".png")
+							img.revs-img( src="img/revs/video-"+index+".png" alt="Отзыв "+index)
+			ol.carousel-indicators.revs_indicators
+				li.active( data-target="#video-revs" data-slide-to="0")
+				li( data-target="#video-revs" data-slide-to="1")
+				li( data-target="#video-revs" data-slide-to="2")
+				li( data-target="#video-revs" data-slide-to="3")
+				li( data-target="#video-revs" data-slide-to="4")
+				li( data-target="#video-revs" data-slide-to="5")
+			.controls.text-controls
+				a( class="left carousel-control" href="#video-revs" role="button" data-slide="prev") <
+				a( class="right carousel-control" href="#video-revs" role="button" data-slide="next") >

@@ -40,6 +40,7 @@ GeI = 'GeorgiaItalic', serif
 }
 
 @import '../css/_css/bootstrap.min.css'
+@import '../css/_css/jquery.fancybox.min.css'
 
 *
 	margin 0
@@ -124,7 +125,6 @@ footer
 	font-size: 24px;
 	font-family: RO
 	color: rgb(10, 25, 56);
-	// line-height: 1.25;
 	padding 0 10px
 	margin 0 auto 30px
 	position relative
@@ -137,18 +137,59 @@ footer
 		content: ''
 		display block
 		position: absolute
-		left 0
+		left -5%
 		right 0
 		top 3px
-		margin 0 auto
-		width 96%
+		width 110%
 		height 100%
 		border: 1px dashed #0a1938
 	&-2
 		&:after
 			width 100%
+			left 0
 			border-left: 0
 			border-right: 0
+.white-container
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 9.4px 0.6px rgba(24, 41, 70, 0.3);
+	width 100%
+	padding 30px
+.general-list
+	li
+		list-style: none
+		position relative
+		padding 6px 0 5px 50px
+		min-height 41px
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ''
+			display block
+			position: absolute
+			top 0
+			left 0
+			background-color: #001236
+			border-radius: 50px
+			padding 4px
+			border: 1px dashed #001236
+			width 40px
+			height 40px
+			background-clip: content-box
+		&:after
+			content: ''
+			display block
+			position: absolute
+			width 20px
+			height 9px
+			transform: rotate(-50deg)
+			border-left: 2px solid #DCE0E2
+			border-bottom: 2px solid #DCE0E2
+			top: 14px;
+			left: 11px;
+		&:nth-child(2n+1)
+			&:before
+				background-color: #EC4A00
 
 
 
