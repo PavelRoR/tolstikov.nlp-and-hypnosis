@@ -1,0 +1,37 @@
+-var head_url = 'https://tolstikov.mastervision.su/nlp-and-hypnosis/';
+-var head_title = '«НЛП и Гипноз - ключи к управлению миром и личному совершенству»';
+-var head_description = '4-дневный онлайн-мастер-класс Виктора Толстикова';
+-var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+mixin b(cl,p)
+	button.button(class=cl data-toggle="modal" data-target="#Modal")=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin gt2(cl,h3)
+	h3.general-title.general-title-2(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		+gt2('','Мастер-класс позволит вам:')
+		include pug/header.pug
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		include pug/main/3.plan.pug
+		include pug/main/4.lets.pug
+		include pug/main/5.author.pug
+		include pug/main/6.revs.pug
+		include pug/main/7.last.pug
+		include pug/main/8.footer.pug
+		include pug/main/9.modal.pug
+		include pug/main/10.politics.pug
+		include pug/main/11.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
