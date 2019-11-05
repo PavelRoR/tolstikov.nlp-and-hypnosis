@@ -13,13 +13,13 @@ $(document).ready(function () {
             currDate = new Date(),
             startDate = new Array(
                 new Date("November 04 2019 18:30 UTC+3"),
-                new Date("November 05 2019 18:30 UTC+3"),
-                new Date("November 05 2019 18:30 UTC+3"),
+                // new Date("November 05 2019 18:30 UTC+3"),
+                // new Date("November 05 2019 18:30 UTC+3"),
                 new Date("November 06 2019 18:30 UTC+3")),
             endDate = new Array(
                 new Date("November 04 2019 21:00 UTC+3"),
-                new Date("November 05 2019 21:00 UTC+3"),
-                new Date("November 05 2019 21:00 UTC+3"),
+                // new Date("November 05 2019 21:00 UTC+3"),
+                // new Date("November 05 2019 21:00 UTC+3"),
                 new Date("November 06 2019 21:00 UTC+3")),
             rooms = new Array(
                 'https://start.bizon365.ru/room/18087/Transpersonal_analytics_d1',
@@ -28,8 +28,6 @@ $(document).ready(function () {
                 'https://start.bizon365.ru/room/18087/Transpersonal_analytics_d3');
 
         function roomSwitch() {
-            modal_text.hide();
-            last_container_title.hide();
             switch_title.removeClass('hide').html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!');
             switch_text.removeClass('hide').html('<span class="hurryup">Скорее ЗАХОДИТЕ прямо СЕЙЧАС на вебинар!</span><br>Присоединяйтесь к интенсиву и окунитесь в мир практической философии! Познайте этот мир и себя в нём!');
             button.text('Зайти!');
@@ -128,7 +126,7 @@ $(document).ready(function () {
         $('#video-revs').on('slide.bs.carousel', function () {
             $('.video-wrapper-revs iframe').each(function () {
                 var l = $(this).parent().attr('data-img');
-                $(this).parent().html('<img class="video-rev-img" src="' + l + '" alt="Видео отзыв">');
+                $(this).parent().html('<img class="video-wrapper-revs" src="' + l + '" alt="Видео отзыв">');
             });
             $(".video-wrapper-revs img").click(function () {
                 var a = $(this).parent().attr("data-youtube");

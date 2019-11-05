@@ -1,0 +1,42 @@
+header
+	padding 25px 0
+	overflow hidden
+	background-color: #657A8A
+	box-shadow: 0 0 10px 4px rgba(#000,.35)
+#logo
+	display block
+	float left
+	width 231px
+	height 17px
+	background-image url(../img/logo.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size contain
+.contacts
+	float: right
+	text-align: right
+	line-height: 17px
+.contact
+	font-size: 16px
+	font-family: 'Arial', sans-serif
+	color #f5f5f5
+	margin-left: 14px
+	padding-left: 25px
+	background-repeat no-repeat
+	background-position: left bottom
+	// background-size: 17px
+	&&-tel
+		background-image url(../img/icons/phone.png)
+		&:first-of-type
+			margin-left: 0
+	&&-skype
+		background-image url(../img/icons/skype.png)
+	&&-email
+		background-image url(../img/icons/email.png)
+		padding-left: 31px
+	&:focus
+		text-decoration: none
+		color #f5f5f5
+	&:hover
+		text-decoration: underline
+		color #f5f5f5

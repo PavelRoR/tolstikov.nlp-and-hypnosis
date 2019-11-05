@@ -1,30 +1,31 @@
 section#last
 	.container
-		.white-container
+		.white-container.white-container-last
 			+gt('','Достигай большего ежедневно!')
 			p.last-text Более 8 000 учеников доверяют нам и реализуют свои цели!
 			h4.last-subtitle Начните сейчас, 
 				span это бесплатно!
-			form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=974" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-last
-				h3.form-last-title.switch-title Хочу так же!
-				p.form-last-text.switch-text.hide
-				.row
-					.col-md-6.col-sm-6
-						.email-block.email-block-last
-							input( type="hidden" value="1" name="required_fields[email]")
-							input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш email")
-					.col-md-6.col-sm-6
-						button(type="submit").button.button-form.button-form-last Записаться
-				.clearfix
-				p.alert-message
-				.checking.checking-modal
-					input(type="checkbox" id="check-2" checked).check
-					label(for="check-2").check-label Я согласен с 
-						a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
-				div(style="display: none;")
-					#formTypeSpecificVars(style="display: none;")
-						input(type="hidden" value="974" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
-					<!-- API код канала рекламы -->
-					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
-					input(type="hidden" name="formId" value="186")
-					input(type="hidden" name="formVc" value="279383643")
+			.last-form-container
+				form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=974" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-last
+					h3.form-last-title.switch-title Хочу так же!
+					p.form-last-text.switch-text.hide
+					.row
+						.col-md-6.col-sm-6
+							.email-block.email-block-last
+								input( type="hidden" value="1" name="required_fields[email]")
+								input(class="input input-mail input-mail-last" name="Contact[email]" type="text" placeholder="Ваш email")
+						.col-md-6.col-sm-6
+							button(type="submit").button.button-form.button-form-last Записаться
+					.clearfix
+					p.alert-message
+					.checking.checking-last
+						input(type="checkbox" id="check-2" checked).check
+						label(for="check-2").check-label Я согласен с 
+							a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
+					div(style="display: none;")
+						#formTypeSpecificVars(style="display: none;")
+							input(type="hidden" value="974" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+						<!-- API код канала рекламы -->
+						input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
+						input(type="hidden" name="formId" value="186")
+						input(type="hidden" name="formVc" value="279383643")
