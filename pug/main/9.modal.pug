@@ -5,14 +5,14 @@
 				button(type="button" class="close" data-dismiss="modal" aria-label="Close")
 					span(aria-hidden="true") &times;
 				.modal-body
-					h3.switch-title.switch-title-modal Запишитесь сейчас
-					p.switch-text.switch-text-modal И получите бонус
+					h3.modal-title.switch-title Запишитесь сейчас
+					p.modal-text.switch-text И получите бонус 
 						span "Название бонуса"
 					form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=974" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-modal
 						.email-block.email-block-modal
 							input( type="hidden" value="1" name="required_fields[email]")
 							input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Ваш email")
-						button(type="submit").button.button-modal Зарегистрироваться
+						button(type="submit").button.button-modal Записаться
 						.clearfix
 						p.alert-message
 						.checking.checking-modal
