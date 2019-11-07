@@ -20,11 +20,11 @@ section#author
 					| автор и ведущий
 		.certs
 			.row
-				.col-md-2.col-sm-2
+				.col-md-2
 					h4.certs-title Сертификаты и дипломы:
-				.col-md-10.col-sm-10
+				.col-md-10
 					.row
 						each n in [1,2,3,4]
-							.col-md-3.col-sm-3
+							.col-md-3.col-sm-3.col-xs-6
 								a.certs-link(href="img/certs/cert-"+n+".png" data-fancybox="certs")
 									img.certs-img(src="img/certs/cert-"+n+".min.png" alt="Сертификат "+n)
