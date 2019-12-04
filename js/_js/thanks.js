@@ -39,21 +39,7 @@ $(document).ready(function () {
         formatOnDisplay: false,
         utilsScript: 'https://mk.beauty-matrix.ru/assets/plugins/intltelinput/js/utils.js',
     });
-    $(function () {
-        var e = new Date,
-            t = e.getDate(),
-            n = $(".switch-date");
-        switch (t) {
-            case 5:
-                n.text("NN числа");
-                break;
-            case 6:
-                n.text("NN числа");
-                break;
-            default:
-                n.text("NN числа")
-        }
-    });
+
     $(function () {
         var check = $('.check', this),
             email = $('.input-mail', this),

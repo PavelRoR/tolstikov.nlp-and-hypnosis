@@ -1,5 +1,5 @@
 -var head_url = 'https://tolstikov.mastervision.su/nlp-and-hypnosis/promo/';
--var head_title = 'Оставьте свои данные, чтобы получить бонус "Название бонуса"';
+-var head_title = 'Оставьте свои данные, чтобы получить бонус "Глубокое расслабление через осознанное дыхание"';
 -var styles = '../css/thanks.min.css';
 -var fav_ico = '../favicon.ico'
 -var fav_png = '../favicon.png'
@@ -24,7 +24,7 @@ html(lang="ru")
 							.inputblock
 								input(type="hidden" value="1" name="required_fields[phone_number]")
 								input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
-						button(type="submit").button.button-form Забрать бонус
+						button(type="submit").button.button-form Забрать бонус и завершить регистрацию
 						.clearfix
 						p.alert-message
 						.checking
@@ -38,6 +38,7 @@ html(lang="ru")
 							input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")#form_newsletter_id_advertising_channel_page
 							input(type="hidden" name="formId" value="207")
 							input(type="hidden" name="formVc" value="3214241551")
+				a.button.button-bots(href="../bots/") Не нужен бонус, завершить регистрацию
 		include pug/bonus/3.footer.pug
 		include pug/main/10.politics.pug
 		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")

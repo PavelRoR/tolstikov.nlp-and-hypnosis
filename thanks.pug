@@ -18,9 +18,7 @@ html(lang="ru")
 		section#main
 			.container
 				a.button.button-thanks(href='../bonus/' target="_blank") Забрать бонус
-				h1.main-title Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи
-				//- h1.main-title Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и получить бонус 
-					//- span видео-урок "Введение в Трансперсональную аналитику"
+				h1.main-title Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить начало мастер-класса
 				.bots
 					a.bots-link.bots-link-vk(href="https://vk.com/app6379730_-96028637#l=64;auto=1", target="_blank")
 						i.fa.fa-vk(aria-hidden="true")
@@ -40,9 +38,8 @@ html(lang="ru")
 					//- a.bots-link.bots-link-ok(href="https://ok.ru/group/55041781530771/messages", target="_blank")
 					//- 	i.fa.fa-odnoklassniki(aria-hidden="true")
 					//- 	| Одноклассники
-				h2.main-subtitle Обязательно приходите на онлайн-мастер-класс 
-					span.switch-date
+
 		include pug/bonus/3.footer.pug
-		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-		script(src="../js/thanks.min.js")
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/thanks-ie.min.css";head.appendChild(link);}
 		include pug/scripts/body_bottom_scripts
