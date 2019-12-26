@@ -19,26 +19,7 @@ html(lang="ru")
 			.container
 				a.button.button-thanks(href='../bonus/' target="_blank") Забрать бонус
 				h1.main-title Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить начало мастер-класса
-				.bots
-					a.bots-link.bots-link-vk(href="https://vk.com/app6379730_-96028637#l=64;auto=1", target="_blank")
-						i.fa.fa-vk(aria-hidden="true")
-						| Вконтакте
-					a.bots-link.bots-link-tg(href="tg://resolve?domain=Master_Vision_Bot&start=ml36", target="_blank")
-						i.fa.fa-telegram(aria-hidden="true")
-						| Telegram
-					a.bots-link.bots-link-fb(href="https://m.me/1726493250936970?ref=ml36", target="_blank")
-						i.fa.fa-facebook(aria-hidden="true")
-						| FaceBook
-					a.bots-link.bots-link-vb(href="viber://pa?chatURI=mastervisionmak&context=ml36", target="_blank")
-						img(src="../img/icons/viber.png", alt="Viber")
-						| Viber
-					//- a.bots-link.bots-link-wa.hide(href="https://api.whatsapp.com/send?phone=79150797851&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C", target="_blank")
-					//- 	i.fa.fa-whatsapp(aria-hidden="true")
-					//- 	| WhatsApp
-					//- a.bots-link.bots-link-ok(href="https://ok.ru/group/55041781530771/messages", target="_blank")
-					//- 	i.fa.fa-odnoklassniki(aria-hidden="true")
-					//- 	| Одноклассники
-
+				include pug/bots/bots.pug
 		include pug/bonus/3.footer.pug
 		script
 			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/thanks-ie.min.css";head.appendChild(link);}

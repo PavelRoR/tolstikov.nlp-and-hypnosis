@@ -1,0 +1,228 @@
+RO = 'RussoOne', sans-serif
+G = 'Georgia', serif
+GI = 'GeorgiaItalic', serif
+OSB = 'OpenSansBold', sans-serif
+
+@font-face {
+	font-family: 'georgia';
+	src: url('../fonts/georgia.eot');
+	src: url('../fonts/georgia.eot') format('embedded-opentype'),
+		 url('../fonts/georgia.woff2') format('woff2'),
+		 url('../fonts/georgia.woff') format('woff'),
+		 url('../fonts/georgia.ttf') format('truetype'),
+		 url('../fonts/georgia.svg#georgia') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'georgiaItalic';
+	src: url('../fonts/georgiaItalic.eot');
+	src: url('../fonts/georgiaItalic.eot') format('embedded-opentype'),
+		 url('../fonts/georgiaItalic.woff2') format('woff2'),
+		 url('../fonts/georgiaItalic.woff') format('woff'),
+		 url('../fonts/georgiaItalic.ttf') format('truetype'),
+		 url('../fonts/georgiaItalic.svg#georgiaItalic') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'RussoOne';
+	src: url('../fonts/RussoOne.eot');
+	src: url('../fonts/RussoOne.eot') format('embedded-opentype'),
+		 url('../fonts/RussoOne.woff2') format('woff2'),
+		 url('../fonts/RussoOne.woff') format('woff'),
+		 url('../fonts/RussoOne.ttf') format('truetype'),
+		 url('../fonts/RussoOne.svg#RussoOne') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		url('../fonts/OpenSansBold.woff2') format('woff2'),
+		url('../fonts/OpenSansBold.woff') format('woff'),
+		url('../fonts/OpenSansBold.ttf') format('truetype'),
+		url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+@import '../css/_css/flipclock.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: G
+	background-color: #F5F5F5
+	color #2a251d
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+		box-shadow: 0 0 10px 3px rgba(#000,.35)
+.button
+	display block
+	margin 0 auto
+	text-align: center
+	border 2px outset rgb(240, 101, 27);
+	background-color: rgb(240, 101, 27);
+	width 100%
+	max-width: 365px;
+	height: 46px;
+	line-height: 42px;
+	font-family: RO
+	color: rgb(255, 255, 255);
+	text-decoration: none
+	transition: all .5 ease
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		color #fff
+		border-style: inset
+		background-color: rgb(240, 101, 27) + 20%;
+.general-title
+	text-align: center
+	font-size: 24px;
+	font-family: RO
+	color: rgb(10, 25, 56);
+	line-height: 1.4
+	width 110%
+	left -5%
+	margin 0 0 35px
+	position relative
+	border: 1px dashed #0a1938
+	padding 0 15px
+	&-2
+		border-left: 0
+		border-right: 0
+		width 100%
+		left 0
+		// &:after
+.white-container
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 9.4px 0.6px rgba(24, 41, 70, 0.3);
+	width 100%
+	padding 30px
+	&-last
+		background-color: #F9FAFA
+.general-list
+	li
+		list-style: none
+		position relative
+		padding 6px 0 5px 50px
+		min-height 41px
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ''
+			display block
+			position: absolute
+			top 0
+			left 0
+			background-color: #001236
+			border-radius: 50px
+			padding 4px
+			border: 1px dashed #001236
+			width 40px
+			height 40px
+			background-clip: content-box
+		&:after
+			content: ''
+			display block
+			position: absolute
+			width 20px
+			height 9px
+			transform: rotate(-50deg)
+			border-left: 2px solid #DCE0E2
+			border-bottom: 2px solid #DCE0E2
+			top: 14px;
+			left: 10px;
+
+	&-2
+		li
+			&:before
+				background-color: #EC4A00
+	&-3
+		li
+			position relative
+			list-style: none
+			line-height: 24px
+			padding-left: 34px
+			&:before
+				content: ''
+				display block
+				position: absolute
+				left 0
+				top 8px
+				border-radius: 50px
+				width 9px
+				height 9px
+				background-color: #282016
+
+
+@import 'main/0.header'
+@import 'course/1.main'
+@import 'course/2.for'
+@import 'course/3.nlp'
+@import 'course/4.hypno'
+// @import 'course/5.mk'
+@import 'course/6.prices'
+@import 'course/7.records'
+@import 'course/8.footer'
+@import 'course/9.modals'
+@import 'course/10.medias'
