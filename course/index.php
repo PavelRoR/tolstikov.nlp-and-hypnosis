@@ -436,7 +436,7 @@
 					href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4345&amp;clean=true&amp;lg=ru" target="-blank"
 					id="prepayment-link">Оплатить 500р.</a>
 			</div>
-			<div class="timer">
+			<div class="timer hide">
 				<h4 class="timer-title">Скидка уменьшится через:</h4>
 				<div class="clock"></div>
 				<div class="clock-stop"></div>
